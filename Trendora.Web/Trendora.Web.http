@@ -1,0 +1,6 @@
+@Trendora.Web_HostAddress = http://localhost:5076
+
+GET {{Trendora.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
