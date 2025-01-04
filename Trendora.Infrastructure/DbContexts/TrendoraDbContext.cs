@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Trendora.Domain.Models;
 
-namespace Trendora.Infrastructure.DbContexts
+namespace Trendora.Infrastructure
 {
     public class TrendoraDbContext : DbContext
     {
