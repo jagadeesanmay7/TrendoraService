@@ -1,9 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using Trendora.Infrastructure.DbContexts;
+using Trendora.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+#region Reg Services
+builder.Services.AddInfrastructureService();
+#endregion
 
 #region CORS Configuration
 builder.Services.AddCors(options =>
@@ -14,7 +17,7 @@ builder.Services.AddCors(options =>
 
 #region Database Connectivity
 builder.Services.AddDbContext<TrendoraDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections")));
+    options.UseSqlServer(@"Server=(LocalDb)\MSSQLLocalDB;Database=Trendorav1;Trusted_Connection=True;"));
 #endregion
 
 builder.Services.AddControllers();
