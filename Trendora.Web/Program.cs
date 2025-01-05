@@ -1,12 +1,15 @@
 using Microsoft.EntityFrameworkCore;
+using Trendora.Application;
 using Trendora.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 #region Reg Services
+builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureService();
 #endregion
+
 
 #region CORS Configuration
 builder.Services.AddCors(options =>

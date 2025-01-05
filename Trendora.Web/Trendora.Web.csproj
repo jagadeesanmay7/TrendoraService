@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Trendora.Domain\Trendora.Domain.csproj" />
+    <ProjectReference Include="..\Trendora.Application\Trendora.Application.csproj" />
     <ProjectReference Include="..\Trendora.Infrastructure\Trendora.Infrastructure.csproj" />
   </ItemGroup>
 

@@ -2,8 +2,8 @@
 
 namespace Trendora.Domain.Interface
 {
-    public interface ICategoryRepository : IGenericRepository<Category>
+    public interface ICategoryRepository : IGenericRepository<Catagory>
     {
-        Task UpdateAsync(Category category);
+        Task UpdateAsync(Catagory catagory);
     }
 }

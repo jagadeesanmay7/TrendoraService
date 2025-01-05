@@ -22,7 +22,7 @@ namespace Trendora.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Trendora.Domain.Models.Category", b =>
+            modelBuilder.Entity("Trendora.Domain.Models.Catagory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace Trendora.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Catagory");
                 });
 #pragma warning restore 612, 618
         }
