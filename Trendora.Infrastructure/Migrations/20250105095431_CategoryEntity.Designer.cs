@@ -12,8 +12,8 @@ using Trendora.Infrastructure;
 namespace Trendora.Infrastructure.Migrations
 {
     [DbContext(typeof(TrendoraDbContext))]
-    [Migration("20250104203328_BaseModel")]
-    partial class BaseModel
+    [Migration("20250105095431_CategoryEntity")]
+    partial class CategoryEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace Trendora.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Trendora.Domain.Models.Category", b =>
+            modelBuilder.Entity("Trendora.Domain.Models.Catagory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace Trendora.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Catagory");
                 });
 #pragma warning restore 612, 618
         }

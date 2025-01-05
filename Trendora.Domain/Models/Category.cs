@@ -2,7 +2,7 @@
 
 namespace Trendora.Domain.Models
 {
-    public class Category : BaseModel
+    public class Catagory : BaseModel
     {
         [Required]
         public string Name { get; set; }

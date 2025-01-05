@@ -3,15 +3,15 @@ using Trendora.Domain.Models;
 
 namespace Trendora.Infrastructure.Repositories
 {
-    public class CategoryRepository : GenericRepository<Category>, ICategoryRepository
+    public class CategoryRepository : GenericRepository<Catagory>, ICategoryRepository
     {
         public CategoryRepository(TrendoraDbContext trendoraDbContext) : base(trendoraDbContext)
         {
 
         }
-        public async Task UpdateAsync(Category category)
+        public async Task UpdateAsync(Catagory catagory)
         {
-            _dbContext.Update(category);
+            _dbContext.Update(catagory);
             await _dbContext.SaveChangesAsync();
         }
     }

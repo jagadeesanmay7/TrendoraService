@@ -9,6 +9,6 @@ namespace Trendora.Infrastructure
         {
 
         }
-        public DbSet<Category> Category { get; set; }
+        public DbSet<Catagory> Catagory { get; set; }
     }
 }
