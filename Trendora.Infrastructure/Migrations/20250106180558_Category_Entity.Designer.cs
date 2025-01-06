@@ -12,8 +12,8 @@ using Trendora.Infrastructure;
 namespace Trendora.Infrastructure.Migrations
 {
     [DbContext(typeof(TrendoraDbContext))]
-    [Migration("20250105095431_CategoryEntity")]
-    partial class CategoryEntity
+    [Migration("20250106180558_Category_Entity")]
+    partial class Category_Entity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

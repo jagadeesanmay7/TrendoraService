@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Trendora.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class CategoryEntity : Migration
+    public partial class Category_Entity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

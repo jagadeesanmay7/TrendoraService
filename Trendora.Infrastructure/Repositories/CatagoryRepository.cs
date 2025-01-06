@@ -3,9 +3,9 @@ using Trendora.Domain.Models;
 
 namespace Trendora.Infrastructure.Repositories
 {
-    public class CategoryRepository : GenericRepository<Catagory>, ICategoryRepository
+    public class CatagoryRepository : GenericRepository<Catagory>, ICatagoryRepository
     {
-        public CategoryRepository(TrendoraDbContext trendoraDbContext) : base(trendoraDbContext)
+        public CatagoryRepository(TrendoraDbContext trendoraDbContext) : base(trendoraDbContext)
         {
 
         }
