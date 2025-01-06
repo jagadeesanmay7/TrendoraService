@@ -10,5 +10,6 @@ namespace Trendora.Infrastructure
 
         }
         public DbSet<Catagory> Catagory { get; set; }
+        public DbSet<Brand> Brand { get; set; }
     }
 }
