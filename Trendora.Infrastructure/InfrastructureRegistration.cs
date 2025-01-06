@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Trendora.Domain.Contracts;
 using Trendora.Domain.Interface;
 using Trendora.Infrastructure.Repositories;
 
@@ -10,6 +11,7 @@ namespace Trendora.Infrastructure
         {
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ICatagoryRepository, CatagoryRepository>();
+            services.AddScoped<IBrandRepository, BrandRepository>();
             return services;
         }
     }
