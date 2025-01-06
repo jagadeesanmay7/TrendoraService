@@ -9,7 +9,7 @@ namespace Trendora.Infrastructure
         public static IServiceCollection AddInfrastructureService(this IServiceCollection services)
         {
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICatagoryRepository, CatagoryRepository>();
             return services;
         }
     }
