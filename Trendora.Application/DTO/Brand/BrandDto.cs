@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Trendora.Application.DTO.Brand
+﻿namespace Trendora.Application.DTO.Brand
 {
     public class BrandDto
     {
